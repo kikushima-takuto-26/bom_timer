@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爆発目覚ましアプリ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <!--見出し-->
+        <h1 id="theme1">爆発目覚まし</h1>
+
+        <p class="hoge">※爆発音が鳴ります</p>
+
+        <!--現在時刻の表示-->
+        <div class='realtime'>
+            <h2>現在時刻</h2>
+            <h2 id="realTime"></h2>
+        </div>
+
+        <!--アラームのセット時刻-->
+        <h3 id="theme2">起きる時間を設定</h3>
+        <!--アラートを鳴らす時間を表示-->
+
+        <h2 id="alartTime"></h2>
+
+        <!--起きる時間のpulldounの設置　jsで値を格納　hiddenで選択できない初期値を設定-->
+        <div class="pulldown">
+            <label>
+            <div>
+                <select id='alarmhour' >
+                    <option hidden>時</option>
+                </select>
+            </div>
+            </label>
+            <label>
+                <div>
+                <select id='alarmminute' >
+                    <option hidden>分</option>
+                </select>
+                </div>
+            </label>
+            <label>
+                <div>
+                <select id='alarmsecond' >
+                    <option hidden>秒</option>
+                </select>
+                </div>
+            </label>
+        </div> 
+
+        <!--アラームをセットするボタン、解除するボタン-->
+        <div class="button area">
+        <!--アラームをセットする部分-->
+            <div>
+                <button id="setbutton" onclick="alarmSet()">
+                    セットする
+                </button>
+            </div>
+        <!--アラームをクリアする部分-->
+            <div>
+                <button id="resetbutton" onclick="alarmReset()">
+                    解除する
+                </button>
+            </div>
+        </div>
+        <!--残りの時間を表示する部分-->
+
+        <!---->
+
+
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
