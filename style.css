@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    background-color: red;
+    background-image: url(bigban.jpg);
+    background-position: center center;
+    /*背景画像を繰り返しタイル状の表示になることを避ける*/
+    background-repeat: no-repeat; 
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: #464646;
+}
+
+.hoge {
+    color: red;
+}
+
+.content{
+    border: 8px solid black;
+    background-color: gainsboro;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+}
+
+.pulldown{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+#alarmhour{
+    margin: 10px;
+}
+
+#alarmminute{
+    margin: 10px;
+}
+
+#alarmsecond{
+    margin: 10px;
+}
+
+#setbutton{
+    margin: 10px;
+}
+
+#resetbutton{
+    margin: 10px;
+}
